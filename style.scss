@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+@import '../fontello-50fbfd91/css/fontello.css' ;
+
+
+$primary: #FFB548;
+$blacksg: #000000;
+$bladrob: rgba(0, 0, 0, 0.75);
+$btnfw7: 700;
+$btnfw4: 400;
+$btnff: 'Open Sans', sans-serif;
+$brdrop: 3px;
+$fs12: 12px;
+$pxlin: 25px;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$custom-colors: (
+    'custom': #0e35aa,
+    'blacksg': $blacksg
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+    font-family: $btnff;
+}
+.text-bold-700 {
+    font-weight: $btnfw7;
+}
+.text-bold-400 {
+    font-weight: $btnfw4;
+}
+h3, h1, h2, .name {
+  font-family: 'Bebas Neue', cursive;
+}
+.border-left {
+    border-left: 0.873968px solid #1A1917;
+    transform: matrix(1, 0, 0.04, 1, 0, 0);
+}
+ h1, h2 {
+    color: $light;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h3 {
+    color: $light;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+p {
+    color: $light;
+    text-align: justify;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $btnff;
+    font-weight: $btnfw4;
+}
+.header {
+   
+    background-image:radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(../img/Group1.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+    
+    .navbar {
+        ul {
+            li {
+                .nav-link {
+                    text-transform: uppercase;
+                    font-weight: $btnfw7;
+                    font-size: $fs12;
+                    font-family: $btnff;
+                    padding-left: $pxlin;
+                    padding-right: $pxlin;
+                }
+            }
+        }
+        i {
+            color: $primary;
+            font-size: 2rem;
+            padding-left: 0.5rem;
+        }
+        .dropdown{
+            border-right: rgba(255, 255, 255, 0.5) 0.873968px solid;
+            .btn {
+                display: inline-block;
+                font-family: $btnff;
+                font-weight: $btnfw7;
+                color:  $light;
+                text-align: center;
+                text-decoration: if($link-decoration == none, null, none);
+                white-space: $btn-white-space;
+                vertical-align: middle;
+                cursor: if($enable-button-pointers, pointer, null);
+                user-select: none;
+                background-color: transparent;
+                border: $btn-border-width solid transparent;
+                @include button-size($btn-padding-y, $btn-padding-x, $fs12, $btn-border-radius);
+                @include transition($btn-transition);
+              
+                &:hover {
+                  color: $body-color;
+                  text-decoration: if($link-hover-decoration == underline, none, null);
+                }
+              
+                .btn-check:focus + &,
+                &:focus {
+                  outline: 0;
+                  box-shadow: none;
+                }
+            }
+            .dropdown-menu {
+                min-width: auto;
+                background: $bladrob;
+                border-radius: $brdrop;
+                padding: 0.2rem 0;
+
+                font-size: $fs12; 
+
+                .dropdown-item {
+                    text-transform: uppercase;
+                    font-weight: $btnfw7;
+                    color: $light;
+                   padding-left: 0.8rem;
+                   padding-right: 1.5rem;
+                   padding-top: 0.05rem;
+                   padding-bottom: 0.05rem;
+
+                   &:hover {
+                       background-color: transparent;
+                       color: $primary;
+                   }
+                }
+            
+            }
+        }
+    }  
+    .row {
+        .col {
+            .btn {
+                font-family: $btnff;
+                .btn-check:focus + &,
+                &:focus {
+                  outline: 0;
+                  box-shadow: none;
+                } 
+            }
+        }
+    }
+}
+
+.aboutgal {
+    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../img/bg_image2.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    border: 1px solid #000000;
+    background-color: rgba(15, 15, 15, 0.9);
+    background-blend-mode:overlay;
+    
+    .switch {
+        transform: translate(300px, 300px);
+        max-height: 100px;
+    }
+    .priline-cont { 
+        position: relative;
+        z-index: 1;
+        .priline {
+            background-color: $primary;
+            position: absolute;
+            width: 122.06px;
+            height: 6.27px;
+            top: 38px;
+            left: 178px;
+            z-index: -1;
+        }
+    }
+    
+    .aboutgal-line-container {
+       
+        .aboutgal-line {
+            background: #FFFFFF;
+            border-radius: 4px;
+            max-width: 712px;
+        }
+    
+    }
+    .gallery {
+        position: relative;
+            
+        
+   
+        .gallery-box {
+            width: 502px;
+            height: 600px;
+            border-radius: 6.33344px;
+            overflow: hidden;
+            img {
+                border-radius: 6.33344px;
+            }
+           
+
+            .swith {
+               position: absolute;
+               bottom: 0;
+               left: 10px;
+            }
+    
+        }
+             
+        .im5_2 {
+            position: relative;
+            z-index: 999;
+        }
+        .im5_3 {
+            position:absolute;
+            top: 0;
+            left: 40px;
+            transform: scale(0.95);
+            opacity: 0.9;
+            height: auto;
+            z-index: 888;
+
+        }
+        .im5_4 {
+            position:absolute;
+            top: 0;
+            left: 95px;
+            transform: scale(0.95);
+            opacity: 0.9;
+            z-index: 777;
+
+        }
+    }
+}
