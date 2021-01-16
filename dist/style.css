@@ -10829,7 +10829,7 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
-h3, .h3, h1, .h1, h2, .h2, .name {
+h3, .h3, h1, .h1, h2, .h2, .name, .feature {
   font-family: "Bebas Neue", cursive;
 }
 
@@ -10854,6 +10854,16 @@ h3, .h3 {
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.feature {
+  font-weight: 700;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFB548;
 }
 
 p {
@@ -10971,31 +10981,54 @@ p {
   left: 178px;
   z-index: -1;
 }
+.aboutgal .aboutgal-line-container {
+  position: absolute;
+  max-width: 800px;
+  z-index: 1000;
+  bottom: 450px;
+}
 .aboutgal .aboutgal-line-container .aboutgal-line {
   background: #FFFFFF;
   border-radius: 4px;
-  max-width: 712px;
 }
 .aboutgal .gallery {
   position: relative;
 }
 .aboutgal .gallery .gallery-box {
-  width: 502px;
-  height: 600px;
+  min-width: 502px;
+  min-height: 600px;
+  max-width: 502px;
+  max-height: 600px;
   border-radius: 6.33344px;
-  overflow: hidden;
-}
-.aboutgal .gallery .gallery-box img {
-  border-radius: 6.33344px;
+  position: relative;
 }
 .aboutgal .gallery .gallery-box .swith {
+  margin: 2rem;
+  padding: 0.55rem;
+  border: 1px solid #f8f9fa;
+  border-radius: 200px;
+  transition: ease 300ms;
+}
+.aboutgal .gallery .gallery-box .swith:hover, .aboutgal .gallery .gallery-box .active {
+  background-color: #f8f9fa;
+}
+.aboutgal .gallery .gallery-box .active::before {
+  content: "";
+  background-color: #fff;
+  padding: 2px 20px;
+  border-radius: 5px;
   position: absolute;
-  bottom: 0;
-  left: 10px;
+  z-index: 9999;
+  left: 90px;
+  bottom: 39px;
 }
 .aboutgal .gallery .im5_2 {
   position: relative;
   z-index: 999;
+  background-image: url(../img/image5.2.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 10px 10px;
 }
 .aboutgal .gallery .im5_3 {
   position: absolute;
@@ -11005,12 +11038,71 @@ p {
   opacity: 0.9;
   height: auto;
   z-index: 888;
+  background-image: url(../img/image5.3.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 10px 10px;
 }
 .aboutgal .gallery .im5_4 {
   position: absolute;
   top: 0;
-  left: 95px;
-  transform: scale(0.95);
+  left: 80px;
+  transform: scale(0.9);
   opacity: 0.9;
   z-index: 777;
+  background-image: url(../img/image5.4.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 10px 10px;
+}
+
+.features {
+  background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(../img/bg_image3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.features .features-carusel {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.features .feature:hover::before, .features .active::before {
+  background-color: #FFFFFF;
+}
+.features a {
+  text-decoration: none;
+}
+.features .active {
+  position: relative;
+}
+.features .active::after {
+  display: block;
+  max-width: 3px;
+  content: "";
+  margin: 1rem;
+  padding: 73px 1px;
+  border: 1px solid #f8f9fa;
+  border-radius: 200px;
+  transition: ease 300ms;
+  position: absolute;
+  top: 0px;
+  left: -53px;
+  background-color: #fff;
+  z-index: 1;
+}
+.features .feature {
+  position: relative;
+}
+.features .feature::before {
+  display: block;
+  max-width: 3px;
+  content: "";
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #f8f9fa;
+  border-radius: 200px;
+  transition: ease 300ms;
+  position: absolute;
+  top: -10px;
+  left: -60px;
 }
