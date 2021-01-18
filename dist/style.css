@@ -10866,6 +10866,14 @@ h3, .h3 {
   color: #FFB548;
 }
 
+.name {
+  color: #FFB548;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 p {
   color: #f8f9fa;
   text-align: justify;
@@ -11092,6 +11100,7 @@ p {
 }
 .features .feature {
   position: relative;
+  z-index: 1100;
 }
 .features .feature::before {
   display: block;
@@ -11105,4 +11114,46 @@ p {
   position: absolute;
   top: -10px;
   left: -60px;
+}
+.systreq {
+  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url(../img/bg_image_4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.systreq .sysreq-tables {
+  margin-top: 130px;
+  border: 1px solid #979797;
+}
+.systreq .sysreq-tables .sysreq-tables__top {
+  min-height: 125px;
+}
+.systreq .sysreq-tables .sysreq-tables__top .sysreq-tables__items {
+  padding: 15px 10px 10px 15px;
+  border: 1px solid #979797;
+}
+.systreq .sysreq-tables .sysreq-tables__top .sysreq-tables__items .sysreq-tables__item {
+  padding: 5px;
+  margin: 0;
+}
+.systreq .sysreq-tables .sysreq-tables__mid {
+  min-height: 125px;
+}
+.systreq .sysreq-tables .sysreq-tables__mid .sysreq-tables__items {
+  padding: 15px 10px 10px 15px;
+  border: 1px solid #979797;
+}
+.systreq .sysreq-tables .sysreq-tables__mid .sysreq-tables__items .sysreq-tables__item {
+  padding: 5px;
+  margin: 0;
+}
+.systreq .sysreq-tables .sysreq-tables__bot {
+  min-height: 125px;
+}
+.systreq .sysreq-tables .sysreq-tables__bot .sysreq-tables__items {
+  padding: 15px 10px 0px 15px;
+}
+.systreq .sysreq-tables .sysreq-tables__bot .sysreq-tables__items .sysreq-tables__item {
+  padding: 5px;
+  margin: 0;
 }
