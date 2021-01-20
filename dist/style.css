@@ -11123,37 +11123,40 @@ p {
 }
 .systreq .sysreq-tables {
   margin-top: 130px;
-  border: 1px solid #979797;
+  background-image: url(../img/Vector_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
-.systreq .sysreq-tables .sysreq-tables__top {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__top {
   min-height: 125px;
 }
-.systreq .sysreq-tables .sysreq-tables__top .sysreq-tables__items {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__top .sysreq-tables__items {
   padding: 15px 10px 10px 15px;
   border: 1px solid #979797;
 }
-.systreq .sysreq-tables .sysreq-tables__top .sysreq-tables__items .sysreq-tables__item {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__top .sysreq-tables__items .sysreq-tables__item {
   padding: 5px;
   margin: 0;
 }
-.systreq .sysreq-tables .sysreq-tables__mid {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__mid {
   min-height: 125px;
 }
-.systreq .sysreq-tables .sysreq-tables__mid .sysreq-tables__items {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__mid .sysreq-tables__items {
   padding: 15px 10px 10px 15px;
   border: 1px solid #979797;
 }
-.systreq .sysreq-tables .sysreq-tables__mid .sysreq-tables__items .sysreq-tables__item {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__mid .sysreq-tables__items .sysreq-tables__item {
   padding: 5px;
   margin: 0;
 }
-.systreq .sysreq-tables .sysreq-tables__bot {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__bot {
   min-height: 125px;
 }
-.systreq .sysreq-tables .sysreq-tables__bot .sysreq-tables__items {
-  padding: 15px 10px 0px 15px;
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__bot .sysreq-tables__items {
+  padding: 15px 10px 40px 15px;
 }
-.systreq .sysreq-tables .sysreq-tables__bot .sysreq-tables__items .sysreq-tables__item {
+.systreq .sysreq-tables .sysreq-tables__inner .sysreq-tables__bot .sysreq-tables__items .sysreq-tables__item {
   padding: 5px;
   margin: 0;
 }

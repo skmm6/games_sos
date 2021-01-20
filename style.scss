@@ -372,39 +372,46 @@ p {
         background-position: right; 
         .sysreq-tables{
             margin-top: 130px;
-            border: 1px solid #979797;
-
-            .sysreq-tables__top {
-                min-height: 125px;
-               .sysreq-tables__items{
-                padding: 15px 10px 10px 15px;
-                border: 1px solid #979797;
-                 .sysreq-tables__item {
-                     padding: 5px;
-                    margin: 0;
-                }
-               }
-            }
-            .sysreq-tables__mid {
-                min-height: 125px;
-                .sysreq-tables__items{
+            background-image: url(../img/Vector_2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            .sysreq-tables__inner {
+                .sysreq-tables__top {
+                    min-height: 125px;
+                   .sysreq-tables__items{
                     padding: 15px 10px 10px 15px;
                     border: 1px solid #979797;
-                    .sysreq-tables__item {
-                        padding: 5px;
+                     .sysreq-tables__item {
+                         padding: 5px;
                         margin: 0;
+                    }
+                   }
+                }
+                .sysreq-tables__mid {
+                    min-height: 125px;
+                    .sysreq-tables__items{
+                        padding: 15px 10px 10px 15px;
+                        border: 1px solid #979797;
+                        .sysreq-tables__item {
+                            padding: 5px;
+                            margin: 0;
+                        }
+                    }
+                }
+                .sysreq-tables__bot {
+                    min-height: 125px;
+                    .sysreq-tables__items{
+                        padding: 15px 10px 40px 15px;
+                        .sysreq-tables__item {
+                            padding: 5px;
+                            margin: 0;
+                        }
                     }
                 }
             }
-            .sysreq-tables__bot {
-                min-height: 125px;
-                .sysreq-tables__items{
-                    padding: 15px 10px 0px 15px;
-                    .sysreq-tables__item {
-                        padding: 5px;
-                        margin: 0;
-                    }
-                }
-            }
+
+     
         }
     }
+    
