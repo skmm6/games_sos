@@ -38,9 +38,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 h3, h1, h2, .name, .feature  {
   font-family: 'Bebas Neue', cursive;
 }
+.px14 {
+    font-size: 14px;
+}
 .border-left {
     border-left: 0.873968px solid #1A1917;
     transform: matrix(1, 0, 0.04, 1, 0, 0);
+}
+.workplace{
+    opacity: 0.5;
 }
  h1, h2 {
     color: $light;
@@ -74,6 +80,7 @@ h3 {
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 p {
     color: $light;
@@ -419,8 +426,221 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
+    .text{
+        max-width: 435px;
+        padding: 25px 0;
+    }
+    .pressquotes-container {
+        max-width: 455px;    
+        background-color: #ffffff14;
+        border-radius: 10px;
+        .pressquotes-container__box {
+            padding: 20px 50px 20px 20px;
+            i {
+                color: $light;
+                font-size: 14px;
+                mix-blend-mode: normal;
+                opacity: 0.3;
+            }
+            .pressquotes-container__name {
+                padding: 0 20px;
+                .name {
+                    margin-bottom: 0;
+                }
+            }
+
+                 .pressquotes-container__img8 {
+
+                    padding: 30px;
+                    border-radius: 100%;
+                    background-color: $primary;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 7px;
+                        content: '';
+                        padding: 30px;
+                        background-image: url(../img/image8.png);
+                        border-radius: 100%;
+                    }
+                }
+                .pressquotes-container__img9 {
+                    padding: 30px;
+                    border-radius: 100%;
+                    background-color: $primary;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 7px;
+                        content: '';
+                        padding: 30px;
+                        background-image: url(../img/image9.png);
+                        border-radius: 100%;
+                    }
+                }
+                .pressquotes-container__img10 {
+                    padding: 30px;
+                    border-radius: 100%;
+                    background-color: $primary;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 7px;
+                        content: '';
+                        padding: 30px;
+                        background-image: url(../img/image10.png);
+                        border-radius: 100%;
+                    }
+                }
+        }
+    }
 }  
 
 .footer {
+    .text-footer{
+        padding: 10px 0;
+        .right {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 15px 0;
+            color: #FFFFFF;
+        }
+        .left {
+            padding: 15px 0;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+
+                color: #FFFFFF;
+
+                mix-blend-mode: normal;
+                opacity: 0.5;
+        }
+    }
+   .hr {
+    opacity: 0.5;
+    border: 0.873968px solid #FFFFFF;
+   }
+    .col {
+        .navbar {
+            i {
+                font-size: 24px;
+                padding: 20px;
+                color: $light;
+                transition: ease 300ms;
+            }
+            .icon-facebook {
+                &:hover {
+                    color:  #3b5998;
+                }
+            }
+            .icon-twitter{
+                &:hover {
+                    color: #00acee;
+                }
+            }
+            .icon-youtube-play {
+                &:hover {
+                    color:  #c4302b;
+                }
+            }
+            .icon-twitch {
+                &:hover {
+                    color:  #6441a5;
+                }
+            }
+            ul {
+                li {
+                    .nav-link {
+                        text-transform: uppercase;
+                        font-weight: $btnfw7;
+                        font-size: $fs12;
+                        font-family: $btnff;
+                        padding-left: $pxlin;
+                        padding-right: $pxlin;
+                     }
+                    }
+                 }
+            }
+         }
+    
      background-color: #080A0B;
+     .btntext {
+       box-sizing: border-box;
+       padding: 18px 0;
+      
+     }
+    .controlemail {
+        border-radius: 5px;
+        background-color: #ffffff14;
+        padding: 10px 20px;
+        input {
+            margin: 0;
+            font-family: $btnff;
+            font-size: inherit;
+            line-height: inherit;
+            min-width: 366px;
+            max-height: 60px;
+            background-color:  #ffffff14;
+            opacity: 1;
+        
+        }
+        .form-label {
+            color: $light;
+            opacity: 0.5;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            padding: 0;
+           color: $primary;
+           display: block;
+           width: 100%;
+           font-size: 1rem;
+           font-weight: 400;
+           line-height: 1.5;
+           background-color: #ffffff14;
+           appearance: none;
+           transition: none;
+           border: 0px solid #ffffff14;
+           &:focus {
+               color: $primary;
+               background-color:  #ffffff14;
+               border-color: none;
+               box-shadow: none;
+               outline: 0;
+               
+             }
+             &::placeholder {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                color: $primary;
+                // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+                opacity: 1;
+              }
+    }
+     
+    }
+     .fot-img {
+         min-width: 445px;
+         min-height: 695px;
+         background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../img/image11f.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+
 }   
